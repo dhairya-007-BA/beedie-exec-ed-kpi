@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the Excel file containing 28 worksheets
-excel_path = "/Users/dhairyasinghal/Desktop/Project/DEP Clean Data.xlsx"  # Update path if needed
+excel_path = "/Users/dhairyasinghal/Desktop/Project/filenname.xlsx"  # Update path if needed
 excel_file = pd.ExcelFile(excel_path)
 
 # Define the standard headers
