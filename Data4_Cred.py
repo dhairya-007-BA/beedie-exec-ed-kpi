@@ -1,7 +1,7 @@
 import pandas as pd
 
 # === STEP 1: Load Excel ===
-file_path = "/Users/dhairyasinghal/Desktop/Project/Exec Ed/KPMG Master Micro-Credential Participant List  Dhairya Sheet.xlsx"
+file_path = "/Users/dhairyasinghal/Desktop/Project/file/Credential List Dhairya Sheet.xlsx"
 xls = pd.ExcelFile(file_path)
 
 # === STEP 2: Select valid course sheets ===
@@ -41,7 +41,7 @@ for sheet in valid_sheets:
 
 # === STEP 4: Combine and Export ===
 final_df = pd.concat(combined_data, ignore_index=True)
-output_file = "KPMG_All_Courses_With_Cohort_Column.xlsx"
+output_file = "All_Courses_With_Cohort_Column.xlsx"
 final_df.to_excel(output_file, index=False)
 
 print(f"✅ File saved: {output_file}")
